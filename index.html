@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agradicimentos ao Professor Vinicius</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(45deg, #000000, #0000ff);
+            min-height: 100vh;
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            color: white;
+            z-index: 1;
+            position: relative;
+            max-width: 900px;
+            width: 90%;
+        }
+
+        .small-text {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #f4d03f;
+        }
+
+        .title {
+            font-size: 4.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: #fff;
+        }
+
+        .travel-details {
+            display: inline-block;
+            padding: 2rem;
+            margin: 1rem;
+            width: 100%;
+            max-width: 800px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .travel-details:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .small-text {
+                font-size: 1rem;
+            }
+
+            .travel-details {
+                padding: 1rem;
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .hero-content {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body>
-    <h1>Vini</h1>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="small-text">Desenvolvimento de Sistemas 2023/1</div>
+            <h1 class="title">Vinicius</h1>
+            <a href="#" class="travel-details">Em nome de toda a turma, queremos agradecer por ter nos guiado nesta jornada de aprendizado. Sua dedicação e entusiasmo tornaram as aulas dinâmicas e envolventes, transformando linhas de código em conhecimento valioso. Os projetos práticos e sua forma única de ensinar fizeram toda a diferença em nossa formação. Levaremos não apenas o conhecimento técnico, mas também suas lições de perseverança e resolução de problemas.</a>
+        </div>
+    </div>
 </body>
 </html>
